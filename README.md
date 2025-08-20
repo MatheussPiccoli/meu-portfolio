@@ -1,30 +1,42 @@
-Meu Portfólio
-Este é o meu portfólio pessoal, um espaço para exibir meus projetos, habilidades e informações de contato.
+# 🌐 Meu Portfólio Pessoal
 
-Sobre o Projeto
-Este projeto foi construído para demonstrar minhas competências em desenvolvimento web, com um foco especial em construir uma aplicação sólida e eficiente usando apenas as linguagens fundamentais da web. O objetivo é apresentar uma interface limpa e responsiva, que se adapte perfeitamente a qualquer dispositivo.
+Bem-vindo ao meu portfólio!  
+Este é um espaço criado para **exibir meus projetos, habilidades e informações de contato**.  
+O objetivo é apresentar uma interface **limpa, responsiva e funcional**, construída apenas com as tecnologias fundamentais da web.
 
-Tecnologias Utilizadas
-O portfólio foi inteiramente desenvolvido com as seguintes tecnologias:
+---
 
-HTML5: Utilizado para estruturar e organizar o conteúdo da página.
+## 📖 Sobre o Projeto
+Este projeto foi desenvolvido para demonstrar minhas competências em **desenvolvimento web**.  
+Busquei criar uma aplicação sólida e eficiente, que se adapta perfeitamente a **qualquer dispositivo** (desktop, tablet ou smartphone).
 
-CSS3: Responsável por toda a estilização e design visual, garantindo uma experiência de usuário agradável.
+---
 
-JavaScript: Usado para adicionar interatividade e dinamismo ao site, como efeitos visuais e validação de formulários.
+## 🛠️ Tecnologias Utilizadas
+- **HTML5** → Estruturação e organização do conteúdo da página.  
+- **CSS3** → Estilização e design visual, garantindo uma experiência agradável.  
+- **JavaScript** → Interatividade e dinamismo (efeitos visuais e validação de formulários).  
+- **Design Responsivo** → Layout flexível que se ajusta a diferentes tamanhos de tela.  
 
-Design Responsivo: A interface se ajusta automaticamente para telas de desktops, tablets e smartphones.
+---
 
-Galeria de Projetos: Uma seção dedicada para apresentar meus trabalhos recentes, com descrições e links para os projetos.
+## 🎨 Funcionalidades
+- 📂 **Galeria de Projetos**: Seção para exibir meus trabalhos recentes com descrições e links.  
+- 📬 **Formulário de Contato**: Canal direto para visitantes entrarem em contato comigo.  
 
-Formulário de Contato: Uma maneira fácil e direta para que visitantes possam entrar em contato comigo.
+---
 
-Autor
-Nome: Matheus Piccoli
+## 👨‍💻 Autor
+**Nome:** Matheus Piccoli  
 
-LinkedIn: [Link para seu perfil do LinkedIn]
+🔗 [LinkedIn](https://www.linkedin.com/in/matheus-piccoli-de-moura/)  
+💻 [GitHub](https://github.com/) _(adicione o link real do seu GitHub aqui)_  
 
-GitHub: https://www.linkedin.com/in/matheus-piccoli-de-moura/
+---
 
-Licença
-Este projeto está sob a licença MIT.
+## 📜 Licença
+Este projeto está sob a licença **MIT**.  
+Sinta-se à vontade para usar e modificar, desde que mantenha os devidos créditos.  
+
+---
+✨ Obrigado por visitar meu portfólio!
