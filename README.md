@@ -30,7 +30,7 @@ Busquei criar uma aplicação sólida e eficiente, que se adapta perfeitamente a
 **Nome:** Matheus Piccoli  
 
 🔗 [LinkedIn](https://www.linkedin.com/in/matheus-piccoli-de-moura/)  
-💻 [GitHub](https://github.com/) _(adicione o link real do seu GitHub aqui)_  
+💻 [GitHub](https://github.com/MatheussPiccol) 
 
 ---
 
