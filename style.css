@@ -17,7 +17,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
+  padding: 0 3.2rem;
 }
 
 header {
@@ -30,7 +31,7 @@ header {
   display: flex;
   justify-content: right;
   align-items: center;
-  height: 96;
+  height: 96px;
   padding: 2.4rem 4.8rem;
 }
 
@@ -70,7 +71,7 @@ a:visited {
 }
 
 .header-container {
-  width: 1200px;
+  max-width: 1200px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -96,7 +97,7 @@ a:visited {
 .sobre-img {
   position: relative;
   z-index: 1;
-  max-width: 750px;
+  max-width: 115%;
   height: auto;
   border-radius: 12px;
 }
@@ -239,8 +240,7 @@ section {
 .grid-2-cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 80px;
-  row-gap: 80px;
+  gap: 80px;
 }
 
 .projeto {
@@ -308,10 +308,10 @@ span {
   padding: 8px 16px;
 }
 
-.experiencia {
+.grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 80px;
+  gap: 80px;
 }
 
 .exp-img {
@@ -446,4 +446,182 @@ textarea {
 .copyright {
   font-size: 14px;
   color: #767676;
+}
+
+/* PARA TELAS GRANDES (LAPTOPS, DESKTOPS) */
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    padding: 0 6.4rem;
+  }
+
+  .sobre-container {
+    gap: 4.8rem;
+  }
+
+  .main-nav {
+    justify-content: center;
+  }
+
+/* PARA TELAS MÉDIAS (TABLETS) */
+@media (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-nav {
+    padding: 1.2rem 3.2rem;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .sobre-container,
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-img-box {
+    margin-bottom: 3.2rem;
+  }
+
+  .contact-img-box {
+    height: 300px;
+  }
+}
+
+/* PARA TELAS PEQUENAS (CELULARES GRANDES) */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 1.6rem;
+  }
+
+  .main-nav {
+    justify-content: center;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 16px;
+  }
+
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--margin-right {
+    margin-bottom: 24px;
+  }
+}
+
+/* PARA TELAS PEQUENAS (CELULARES) */
+@media (max-width: 576px) {
+  html {
+    font-size: 43.75%;
+  }
+
+  body {
+    width: 65vh;
+  }
+
+  .container {
+    padding: 0 1.6rem;
+  }
+
+  .header-container {
+    padding: 0 1.6rem;
+    margin-top: 48px;
+  }
+
+  header {
+    height: 100vh;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.6rem;
+    background-color: #fdf2e9;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    position: static;
+    width: 100%;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 12px;
+    padding: 32px 0;
+    text-align: center;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 18px;
+  }
+
+  .curriculo:link,
+  .curriculo:visited {
+    padding: 1rem 2rem;
+    font-size: 16px;
+  }
+
+  .hero-img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.6rem;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 2.4rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+
+  .btn--margin-right {
+    margin-bottom: 24px;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    gap: 12px;
+    padding: 32px 0;
+    text-align: center;
+  }
+
+  .social-links {
+    padding: 32px 0;
+  }
+
+  .header-container--inner h1 {
+    margin-bottom: 48px;
+  }
 }
