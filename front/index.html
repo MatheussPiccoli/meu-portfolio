@@ -388,11 +388,11 @@
                   </a>
                 </li>
               </ul>
-              <form class="contact-form">
+              <form class="contact-form" id="contactForm">
                 <div>
                   <label for="full-name">Nome</label>
                   <input
-                    id="full-name"
+                    id="name"
                     type="text"
                     placeholder="João Costa"
                     required
@@ -410,11 +410,44 @@
                 </div>
                 <div>
                   <label for="mensagem">Mensagem</label>
-                  <textarea id="mensagem" name="mensagem" required></textarea>
+                  <textarea id="message" name="message" required></textarea>
                 </div>
                 <button class="btn btn--form">Enviar mensagem</button>
               </form>
+              <div id="statusMessage"></div>
             </div>
+            <script>
+              document
+                .getElementById("contactForm")
+                .addEventListener("submit", function (event) {
+                  event.preventDefault();
+
+                  const name = document.getElementById("name").value; // Agora encontra o elemento com id="name"
+                  const email = document.getElementById("email").value;
+                  const message = document.getElementById("message").value;
+
+                  fetch("http://localhost:3000/send-email", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ name, email, message }),
+                  })
+                    .then((response) => response.json())
+                    .then((data) => {
+                      document.getElementById("statusMessage").textContent =
+                        data.message;
+                      if (data.success) {
+                        document.getElementById("contactForm").reset();
+                      }
+                    })
+                    .catch((error) => {
+                      console.error("Erro:", error);
+                      document.getElementById("statusMessage").textContent =
+                        "Ocorreu um erro ao enviar a mensagem.";
+                    });
+                });
+            </script>
             <div class="contact-img-box" role="img" aria-label="Telefone"></div>
           </div>
         </div>
