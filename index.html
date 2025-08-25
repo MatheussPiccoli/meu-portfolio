@@ -16,14 +16,26 @@
   <body>
     <main>
       <header>
-        <nav class="container">
-          <a class="main-nav-link" href="#sobre">Sobre mim</a>
-          <a class="main-nav-link" href="#projetos">Projetos</a>
-          <a class="main-nav-link" href="#exp_e_certificados"
-            >Experiencias e certificados</a
-          >
-          <a class="main-nav-link" href="#contatos">Contatos</a>
-          <a class="main-nav-link curriculo" href="#">Baixar Currículo</a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#sobre">Sobre mim</a></li>
+            <li><a class="main-nav-link" href="#projetos">Projetos</a></li>
+            <li>
+              <a class="main-nav-link" href="#exp_e_certificados"
+                >Experiencias e certificados</a
+              >
+            </li>
+            <li><a class="main-nav-link" href="#contatos">Contatos</a></li>
+            <li>
+              <a
+                class="main-nav-link curriculo"
+                href="curriculo.pdf"
+                target="_blank"
+                download="curriculo.pdf"
+                >Baixar Currículo</a
+              >
+            </li>
+          </ul>
         </nav>
 
         <div class="header-container">
@@ -34,7 +46,13 @@
               class="hero-img"
             />
             <h1>Olá, me chamo Matheus e eu sou um Desenvolvedor Web</h1>
-            <a href="#" class="btn btn--margin-right btn--orange">Currículo</a>
+            <a
+              href="curriculo.pdf"
+              target="_blank"
+              class="btn btn--margin-right btn--orange"
+            >
+              Ver Currículo</a
+            >
             <a href="#contatos" class="btn btn--white"
               >Entre em Contato &darr;</a
             >
@@ -45,7 +63,9 @@
       <section class="sobre-mim" id="sobre">
         <div class="container sobre-container">
           <div class="sobre-text">
-            <h2>Sobre mim</h2>
+            <div class="h2-flex">
+              <h2>Sobre mim</h2>
+            </div>
             <p>
               Meu nome é Matheus Piccoli e sou atualmente um estudante
               universitário do curso de sistemas de informação, na UFSC. No
@@ -93,8 +113,13 @@
                   Sistema desenvolvido em formato MVC para gerenciamento de
                   farmácia.
                 </p>
-                <span>Python</span>
-                <span>PySImpleGUI</span>
+                <div class="projeto-stack">
+                  <span>Python</span>
+                  <span>PySImpleGUI</span>
+                </div>
+                <div class="projeto-link-container">
+                  <a class="projeto-link" href="#">Ver no GitHub </a>
+                </div>
               </div>
             </figure>
             <figure class="projeto">
@@ -112,8 +137,13 @@
                   maquininhas e tipos de pagamento, além de registrar/remover
                   vendas e lista-las
                 </p>
-                <span>Python</span>
-                <span>Tkinter</span>
+                <div class="projeto-stack">
+                  <span>Python</span>
+                  <span>Tkinter</span>
+                </div>
+                <div class="projeto-link-container">
+                  <a class="projeto-link" href="#">Ver no GitHub </a>
+                </div>
               </div>
             </figure>
             <figure class="projeto">
@@ -125,11 +155,16 @@
                 />
               </div>
               <div class="projeto-box">
-                <h3>Programa para controle de Caixa</h3>
-                <p>Meu portfolio, para que todos possam ver o que eu já fiz!</p>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Javascript</span>
+                <h3>Matheus Piccoli portfólio</h3>
+                <p>Meu portfólio, para que todos possam ver o que eu já fiz!</p>
+                <div class="projeto-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Javascript</span>
+                </div>
+                <div class="projeto-link-container">
+                  <a class="projeto-link" href="#">Ver no GitHub </a>
+                </div>
               </div>
             </figure>
           </div>
