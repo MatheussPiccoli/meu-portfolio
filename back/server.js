@@ -2,9 +2,10 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const path = require("path");
+require("dotenv").config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cors());
@@ -14,8 +15,8 @@ app.use(express.static(path.join(__dirname, "..", "front")));
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "matheuspdmoura@gmail.com",
-    pass: "giaz njpl assc gnxi",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -23,7 +24,7 @@ app.post("/send-email", (req, res) => {
   const { name, email, message } = req.body;
 
   const mailOptions = {
-    from: `"Formulário de Contato" <matheuspdmoura@gmail.com>`,
+    from: `"Formulário de Contato" <${process.env.EMAIL_USER}>`,
     to: "matheuspdmoura@gmail.com",
     subject: `Nova mensagem de ${name}`,
     html: `
