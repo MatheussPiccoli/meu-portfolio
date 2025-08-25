@@ -17,10 +17,13 @@
     <main>
       <header>
         <nav class="container">
-          <a href="#">Sobre mim</a>
-          <a href="#">Projetos</a>
-          <a href="#">Experiencias e certificados</a>
-          <a href="#">Contatos</a>
+          <a class="main-nav-link" href="#sobre">Sobre mim</a>
+          <a class="main-nav-link" href="#projetos">Projetos</a>
+          <a class="main-nav-link" href="#exp_e_certificados"
+            >Experiencias e certificados</a
+          >
+          <a class="main-nav-link" href="#contatos">Contatos</a>
+          <a class="main-nav-link curriculo" href="#">Baixar Currículo</a>
         </nav>
 
         <div class="header-container">
@@ -31,62 +34,77 @@
               class="hero-img"
             />
             <h1>Olá, me chamo Matheus e eu sou um Desenvolvedor Web</h1>
-            <a href="#" class="btn">Projetos</a>
-            <a href="#" class="btn btn--white">Entre em Contato &darr;</a>
+            <a href="#" class="btn btn--margin-right btn--orange">Currículo</a>
+            <a href="#contatos" class="btn btn--white"
+              >Entre em Contato &darr;</a
+            >
           </div>
         </div>
       </header>
 
-      <section class="sobre-mim">
-        <div class="container">
-          <h2>Sobre mim</h2>
-          <p>
-            Como disse em minha breve descrição, meu nome é Matheus Piccoli e
-            sou atualmente um estudante universitário do curso de sistemas de
-            informação. No curso desde metade de 2024, tive uma breve passagem
-            no curso de engenharia elétrica, onde fiz 4 semestres antes de
-            transferir o curso.
-          </p>
-          <p>
-            Trabalho com desenvolvimento web desde fevereiro de 2025, onde
-            consegui uma bolsa no laboratório Nedip, localizado no bloco b da
-            mecânica, na UFSC. Lá, trabalho com a manutenção e criação de novas
-            features na aplicação web do produto em questão.
-          </p>
-          <p>
-            Tenho como principais hobbies esportes coletivos, academia, jogos
-            diversos (tanto físicos quanto virtuais) e problemas lógicos. Meu
-            principal objetivo é sempre ir atrás de novos desafios, e evoluir
-            não só como profissional, mas também como pessoa.
-          </p>
+      <section class="sobre-mim" id="sobre">
+        <div class="container sobre-container">
+          <div class="sobre-text">
+            <h2>Sobre mim</h2>
+            <p>
+              Meu nome é Matheus Piccoli e sou atualmente um estudante
+              universitário do curso de sistemas de informação, na UFSC. No
+              curso desde metade de 2024, tive uma breve passagem no curso de
+              engenharia elétrica, onde fiz 4 semestres antes de transferir o
+              curso.
+            </p>
+            <p>
+              Trabalho com desenvolvimento web desde fevereiro de 2025, onde
+              consegui uma bolsa no laboratório Nedip, localizado no bloco b da
+              mecânica, na UFSC. Lá, trabalho com a manutenção e criação de
+              novas features na aplicação web do produto em questão.
+            </p>
+            <p>
+              Tenho como principais hobbies esportes coletivos, academia, jogos
+              diversos (tanto físicos quanto virtuais) e problemas lógicos. Meu
+              principal objetivo é sempre ir atrás de novos desafios, e evoluir
+              não só como profissional, mas também como pessoa.
+            </p>
+          </div>
+          <div class="sobre-img-box">
+            <img
+              src="img/IMG-20241226-WA0006.png"
+              class="sobre-img"
+              alt="Matheus Piccoli de camisa social, Matheus Piccoli apresentando trabalho de faculdade, Matheus Piccoli com seu amigo"
+            />
+          </div>
         </div>
       </section>
-      <section>
+      <section id="projetos">
         <div class="container">
           <h2>Projetos</h2>
           <div class="grid-2-cols">
             <figure class="projeto">
-              <img
-                src="img/gerenciamento-farmacia.png"
-                alt="Print da interface do Projeto de gerenciamento de farmacia"
-                class="projeto-img"
-              />
+              <div class="projeto-img-box">
+                <img
+                  src="img/gerenciamento-farmacia.png"
+                  alt="Print da interface do Projeto de gerenciamento de farmacia"
+                  class="projeto-img"
+                />
+              </div>
               <div class="projeto-box">
                 <h3>Programa para gerenciamento de farmácia</h3>
                 <p>
                   Sistema desenvolvido em formato MVC para gerenciamento de
                   farmácia.
                 </p>
-                <spam>Python</spam>
-                <spam>PySImpleGUI</spam>
+                <span>Python</span>
+                <span>PySImpleGUI</span>
               </div>
             </figure>
             <figure class="projeto">
-              <img
-                src="img/image.png"
-                alt="Print da interface do projeto de controle de caixa"
-                class="projeto-img"
-              />
+              <div class="projeto-img-box">
+                <img
+                  src="img/image.png"
+                  alt="Print da interface do projeto de controle de caixa"
+                  class="projeto-img"
+                />
+              </div>
               <div class="projeto-box">
                 <h3>Programa para controle de Caixa</h3>
                 <p>
@@ -94,37 +112,339 @@
                   maquininhas e tipos de pagamento, além de registrar/remover
                   vendas e lista-las
                 </p>
-                <spam>Python</spam>
-                <spam>Tkinter</spam>
+                <span>Python</span>
+                <span>Tkinter</span>
               </div>
             </figure>
             <figure class="projeto">
-              <img
-                src="img/portfolio-img.png"
-                alt="Print do Portfolio"
-                class="projeto-img"
-              />
+              <div class="projeto-img-box">
+                <img
+                  src="img/portfolio-img.png"
+                  alt="Print do Portfolio"
+                  class="projeto-img"
+                />
+              </div>
               <div class="projeto-box">
                 <h3>Programa para controle de Caixa</h3>
                 <p>Meu portfolio, para que todos possam ver o que eu já fiz!</p>
-                <spam>HTML</spam>
-                <spam>CSS</spam>
-                <spam>Javascript</spam>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
               </div>
             </figure>
           </div>
         </div>
       </section>
-      <section>
+      <section id="exp_e_certificados">
         <div class="container">
           <h2>Experiências e certificados</h2>
+          <div class="experiencia">
+            <figure class="exp">
+              <img
+                class="exp-img"
+                src="img/brasao_site_ufsc.svg"
+                alt="brasão UFSC"
+              />
+              <div class="exp-box">
+                <h3>Sistemas de Informação - UFSC</h3>
+                <ul class="exp-details">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="exp-icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                    <span>Ago/2024 - Dez/2028</span>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="exp-icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                      />
+                    </svg>
+
+                    <span
+                      >POO, Estrutura de Dados, MVC, Python, Desenvolvimento
+                      Web, Git, Empreendedorismo</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </figure>
+            <figure class="exp">
+              <img class="exp-img" src="img/emc.png" alt="brasão UFSC" />
+              <div class="exp-box">
+                <h3>Bolsista em Nedip - UFSC</h3>
+                <ul class="exp-details">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="exp-icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                    <span>Fev/2025 - Dec/2025</span>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="exp-icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                      />
+                    </svg>
+                    <span
+                      >Manutenção de sistemas Web, Next.js, Express.js, Postman,
+                      Git, Heroku</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </figure>
+            <figure class="exp">
+              <img
+                class="exp-img"
+                src="img/udemy-course.webp"
+                alt="brasão UFSC"
+              />
+              <div class="exp-box">
+                <h3>
+                  Udemy: Build Responsive Real-World Websites with HTML and CSS
+                </h3>
+
+                <ul class="exp-details">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="exp-icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                    <span>37 horas</span>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="exp-icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                      />
+                    </svg>
+                    <span>HTML, CSS, Inglês</span>
+                  </li>
+                </ul>
+              </div>
+            </figure>
+          </div>
         </div>
       </section>
-      <section>
+      <section id="contatos">
         <div class="container">
-          <h2>Entre em Contato</h2>
+          <div class="contact-container">
+            <div class="contact-text">
+              <h2 class="h2-contact">Entre em Contato</h2>
+              <p>
+                Mande uma mensagem pelo formululário abaixo ou me chame em uma
+                das minhas mídias sociais!
+              </p>
+              <ul class="social-links social-contacts">
+                <li>
+                  <a
+                    href="https://www.instagram.com/matheusspiccoli_"
+                    target="_blank"
+                  >
+                    <svg
+                      class="features-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/matheus-piccoli-de-moura/"
+                    target="_blank"
+                  >
+                    <svg
+                      class="features-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/MatheussPiccoli" target="_blank">
+                    <svg
+                      class="features-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="#000000"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <form class="contact-form">
+                <div>
+                  <label for="full-name">Nome</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="João Costa"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="seuemail@exemplo.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="mensagem">Mensagem</label>
+                  <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                <button class="btn btn--form">Enviar mensagem</button>
+              </form>
+            </div>
+            <div class="contact-img-box" role="img" aria-label="Telefone"></div>
+          </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container grid--footer">
+        <div class="footer-nav">
+          <ul class="footer-list">
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li>
+              <a href="#exp_e_certificados">Experiencias e certificados</a>
+            </li>
+            <li><a href="#contatos">Entre em Contato</a></li>
+          </ul>
+        </div>
+        <div class="socials">
+          <ul class="social-links">
+            <li>
+              <svg
+                class="features-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="features-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="features-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                ></path>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">
+          Copyright © 2025 by Matheus Piccoli. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
